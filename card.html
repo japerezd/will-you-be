@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <!-- The brain of the website -->
+  <head>
+    <!-- Make sure our site looks good on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #796479; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #d9afd9; stroke: #97d9e1; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #bf96bf; stroke: #97d9e1; stroke-width: 2"
+            <animate id='opentop' attributeName="points" dur="0.5s" fill="freeze" 
+	          begin="indefinite"
+            from="0,100 150,200 300,100"
+            to="0,100 150,0 300,100"/>
+          ></polygon>
+        </svg>
+      </div>
+      <div id="letter">
+        <h1>To: My Friend</h1>
+        <!-- <img src="happybday.gif" /> -->
+        <h2>From: Yours Truely</h2>
+      </div>
+      <button onclick="openUp()">
+        Click Here
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
