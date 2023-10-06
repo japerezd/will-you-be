@@ -202,7 +202,6 @@ body {
   text-align: justify;
   animation: text 2s forwards;
   overflow: hidden;
-  /* animation-delay: 0.3s; */
 }
 
 @keyframes text {
@@ -238,4 +237,16 @@ body {
 .quote figcaption,
 .quote blockquote {
   margin: 0.4rem;
+}
+
+.to {
+  font-weight: bold;
+}
+
+.question {
+  color: #b378ee;
+}
+
+footer strong {
+  text-decoration: underline;
 }
