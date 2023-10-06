@@ -142,8 +142,8 @@ body {
 
 .heart-container {
   position: absolute;
-  left: 9.2rem;
-  top: 6rem;
+  left: 42%;
+  top: 40%;
 }
 
 .front.animate,
@@ -218,7 +218,7 @@ body {
 @keyframes makebig {
   33%, 100% {
     width: 100%;
-    transform: translateY(-18rem);
+    transform: translateY(-17rem);
   }
   33% {
     height: 350px;
