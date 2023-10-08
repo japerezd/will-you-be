@@ -230,11 +230,7 @@ body {
 @keyframes makebig {
   33%, 100% {
     width: 100%;
-    position: absolute;
-    top: 1rem;
-    width: 300px;
-    transform: translateY(-35%);
-    top: 0;
+    transform: translateY(-36%);
   }
   33% {
     height: 350px;
