@@ -168,21 +168,6 @@ body {
   background-color: rgba(255, 255, 255, 0);
   transition: background-color 1s;
   transition-delay: 0.5s;
-  /* animation: envelope 2s forwards;
-  animation-delay: 1s; */
-}
-
-@keyframes envelope {
-  20% {
-    top: 12rem;
-  }
-
-  50% {
-    top: 8rem;
-  }
-  75%, 100% { 
-    top: 0;
-  }
 }
 
 .card.animate {
@@ -242,10 +227,7 @@ body {
   33%,
   100% {
     width: 100%;
-    /* transform: translateY(-60%); */
-    /* transform: translateY(calc(-650px + 408px)); */
-    /* transform: translateY(calc(-650px + 61%)); */
-    transform: translateY(calc(-300px + 10%));
+    transform: translateY(calc(-320px + 10%));
   }
   33% {
     height: 350px;
