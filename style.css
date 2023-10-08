@@ -227,7 +227,7 @@ body {
   33%,
   100% {
     width: 100%;
-    transform: translateY(calc(-320px + 10%));
+    transform: translateY(-35vh);
   }
   33% {
     height: 350px;
