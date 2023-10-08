@@ -10,6 +10,16 @@ body {
     rgba(253, 187, 45, 1) 100%
   );
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    position: relative;
+    overflow-y: auto;
+  }
+}
+
+
 .container {
   position: relative;
 }
@@ -18,14 +28,16 @@ body {
   top: 50px;
   cursor: pointer;
 }
+
 .envelope {
-  position: relative;
+  position: absolute;
   width: 300px;
   height: 200px;
   background: #02374b;
   display: grid;
   cursor: pointer;
 }
+
 .envelope::before {
   content: '';
   position: absolute;
@@ -154,12 +166,6 @@ body {
   transition-delay: 0.5s;
 }
 
-.envelope.animate {
-  background-color: rgba(255, 255, 255, 0);
-  transition: background-color 1s;
-  transition-delay: 0.5s;
-}
-
 .card.animate {
   animation: makebig 2s forwards;
   animation-delay: 0.5s;
@@ -204,6 +210,12 @@ body {
   overflow: hidden;
 }
 
+.envelope.animate {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 1s;
+  transition-delay: 0.5s;
+}
+
 @keyframes text {
   33%, 100% {
     padding: 10px;
@@ -218,7 +230,11 @@ body {
 @keyframes makebig {
   33%, 100% {
     width: 100%;
-    transform: translateY(-17rem);
+    position: absolute;
+    top: 1rem;
+    width: 300px;
+    transform: translateY(-35%);
+    top: 0;
   }
   33% {
     height: 350px;
