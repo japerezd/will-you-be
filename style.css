@@ -3,7 +3,6 @@ body {
   place-items: center;
   min-height: 100vh;
   overflow: hidden;
-  background: rgb(34, 193, 195);
   background: radial-gradient(
     circle,
     rgba(34, 193, 195, 1) 0%,
@@ -230,7 +229,7 @@ body {
 @keyframes makebig {
   33%, 100% {
     width: 100%;
-    transform: translateY(-36%);
+    transform: translateY(-17rem);
   }
   33% {
     height: 350px;
