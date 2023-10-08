@@ -165,6 +165,12 @@ body {
   transition-delay: 0.5s;
 }
 
+.envelope.animate {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 1s;
+  transition-delay: 0.5s;
+}
+
 .card.animate {
   animation: makebig 2s forwards;
   animation-delay: 0.5s;
@@ -177,9 +183,6 @@ body {
   display: grid;
   place-items: center;
   transition: 1s;
-}
-
-.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,12 +210,6 @@ body {
   text-align: justify;
   animation: text 2s forwards;
   overflow: hidden;
-}
-
-.envelope.animate {
-  background-color: rgba(255, 255, 255, 0);
-  transition: background-color 1s;
-  transition-delay: 0.5s;
 }
 
 @keyframes text {
