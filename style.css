@@ -3,6 +3,7 @@ body {
   place-items: center;
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
   background: radial-gradient(
     circle,
     rgba(34, 193, 195, 1) 0%,
@@ -13,7 +14,6 @@ body {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   body {
-    position: relative;
     overflow-y: auto;
   }
 }
